@@ -1,0 +1,31 @@
+
+---
+
+title: "Lab 1 DS@USF 1/23/20"
+Author:Mrudhula Murali
+output: html_document
+
+---
+
+Load the iris Dataset
+```{r}
+library(dplyr)
+irisdataset<-data.frame(iris)
+head(irisdataset,5)
+```
+
+Summary of iris dataset
+```{r}
+summary(irisdataset)
+
+```
+filter the iris data 
+```{r}
+filter(irisdataset,Species=="setosa")
+```
+
+```{r}
+boxplot(irisdataset)
+```
+
+
